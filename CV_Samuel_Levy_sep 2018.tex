@@ -1,0 +1,155 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{eurosym}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Samuel LEVY}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+%\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  1927 Murray Ave\\
+  Apt. 32 \\
+  Pittsburgh, PA 15217 \\
+  USA
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (412)-773-2627 \\
+    Email: & \href{mailto:silevy@andrew.cmu.edu}{\tt silevy@andrew.cmu.edu} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Personal}
+\begin{itemize}
+\item Born on November 25, 1992.
+\item French Citizen.
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+
+  \item Ph.D. Industrial Administration (Marketing), Carnegie Mellon University, 2023 (expected).
+
+  \item M.Sc. Research Master in Business (Marketing), Tilburg University, 2018. \textit{Cum laude}.
+
+  \item B.Sc. in Economics, Ecole Normale Superieure Paris-Saclay, 2014. \textit{Magna cum laude}. 
+  
+  \item B.Sc. in Econometrics, University of Paris 1, 2013. \textit{Magna cum laude}.
+
+  %\item French Baccalaureat in Sciences, France, 2010. \textit{Summa cum laude}.
+
+\end{itemize}
+
+\section*{Awards and Honors}
+
+\begin{itemize}
+\item Sep 2018: William Larimer Mellon PhD Fellowship, Carnegie Mellon University.
+\item Mar 2017: Koopmans Scholarship (Dean's scholarship, \euro 12,000) for the academic year 2017-2018.
+\item Sep 2016: Eole Scholarship (\euro 1,000) from the French-Dutch Network, based on academic merit.
+\item Jun 2016: French "Agregation" in Economics and Business Administration (highly competitive national examination) and ranked in the top 1\% nationally.
+\item Sep 2013: Full scholarship - ENS Cachan (\euro 63,000), funded by the French government. 
+\end{itemize}
+
+\section*{Research}
+\begin{itemize}
+\item \textit{Substantive Research Interests:} Digital Marketing, Consumer Search, Platform Economics, Time Constraints, Convenience, Entertainment Industry. 
+\item \textit{Methodological Research Interests:} Structural Models, Machine Learning, Field Experiments.
+\item \textit{Research Master Thesis}:  The Consequences of Retirement on Temporal and Spatial Price Search. Adviser: Prof. Els Gijsbrechts. \\ \\
+\begin{small}
+Abstract: How does retirement affect temporal and spatial price search over time? Matching consumer scanner panel data with longitudinal survey, I show that the retirement shock in time constraints and budget constraints significantly reduces the annual number of trips and trips per store, after accounting for endogeneity. However, the number of visited stores remains unchanged at retirement. Those counter-intuitive results may stem from the fact that consumers are looking for more convenience or plan less their trips before retirement. Allowing for heterogenous reaction to price search, I also show that the retirement effect on price search varies depending on consumers' budget constraints.
+\end{small}
+
+\item \textit{Workshop Attendee:} Quantitative Marketing and Structural Econometrics Workshop at Olin Business School, Washington University, St. Louis (July 2017)
+\item \textit{Presentation:}  Modeling the Diffusion of Management Innovation within an Alliance Network.  European Academy of Management (EURAM) Thematic Conference on Management Innovation (July 2014).
+\item \textit{Research Assistance Pre-Master:} Research Assistant in Experimental Economics, CNRS-University Paris I Pantheon-Sorbonne (May - July 2013)
+\end{itemize}
+
+\section*{Languages}
+English (fluent), French (native), Spanish (intermediate).
+
+\section*{Computing}
+R, Python, Matlab, Stata.
+
+\section*{Interests}
+Jazz Piano, Programming, Movies, Argentine Tango, Soccer.
+
+\end{document}
